@@ -1,13 +1,15 @@
 <HTML>
-  <HEAD>
-    <title>NYT Article Search</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-    <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </HEAD>
-  <BODY>
-    <div class="container">
+<HEAD>
+  <title>NYT Article Search</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" href="https://bootswatch.com/journal/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</HEAD>
+
+<BODY>
+  <div class="container">
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container-fluid">
         <div class="navbar navbar-header">
@@ -15,45 +17,45 @@
         </div>
       </div>
     </nav>
-      <div class="jumbotron">
-        <form>
-          <div class="form-group">
-           <label for="search">Search for:</label>
-           <input type="text" class="form-control" id="search" placeholder="Search critera...">
-         </div>
-         <div class="form-group">
+    <div class="jumbotron">
+      <form>
+        <div class="form-group">
+          <label for="search">Search for:</label>
+          <input type="text" class="form-control" id="search" placeholder="Search critera...">
+        </div>
+        <div class="form-group">
           <label for="qty">Quantity:</label>
           <input type="number" class="form-control" id="qty" value="5">
         </div>
         <div class="form-group">
-         <label for="start">Start year:</label>
-         <input type="number" class="form-control" id="start" placeholder="Optional">
-       </div>
-       <div class="form-group">
-        <label for="end">End year:</label>
-        <input type="number" class="form-control" id="end" placeholder="Optional">
-      </div>
-      <button type="submit" class="btn btn-default" id="submit">Submit</button>
-        </form>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-10 col-md-offset-1">
-          <div class="panel panel-primary">
-            <div class="panel-header bg-primary">Returned Articles</div>
-            <div class="panel-body">Optional body content... followed by an optional table..?  Mainly due to a complete lack of foresight regarding the dataset to be used.</div>
-            <table class="table" id="output">
-              <tr id="outputhdr">
-                <th>Date</th>
-                <th>Headline</th>
-                <th>Author</th>
-                <th>Link</th>
-              </tr>
-            </table>
-          </div>
+          <label for="start">Start year:</label>
+          <input type="number" class="form-control" id="start" placeholder="Optional">
         </div>
+        <div class="form-group">
+          <label for="end">End year:</label>
+          <input type="number" class="form-control" id="end" placeholder="Optional">
+        </div>
+        <button type="button" class="btn btn-default" id="submit">Submit</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-header bg-primary">Returned Articles</div>
+          <div class="panel-body">Optional body content... followed by an optional table..? Mainly due to a complete lack of foresight regarding the dataset to be used.</div>
+          <table class="table" id="output">
+            <tr id="outputhdr">
+              <th>Date</th>
+              <th>Headline</th>
+              <th>Link</th>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="assets/js/nyt.js"></script>
-  </BODY>
+    <script src="./assets/js/nyt.js"></script>
+</BODY>
+
 </HTML>
